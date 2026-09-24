@@ -13,6 +13,9 @@ Put each group members name, archetype, and a link to their page that explains w
 ### - Second Assignment 
 Each member of the group should make a template for one of their assigned topics i.e. a ruler for the person doing archetypes, or unity for someone doing persuasion.  You want to have this ready for the next class to review, so that once you agree on the format then it can be replicated quickly and have a high level of quality.  You should have imagery, suggestions for how to implement, examples, and primary sources of information about that topic.
 
+### - Third Assignment
+Use the agreed upon template and create the remaining items for the topic 12 archetypes, 7 methods of persusion, 6 post modern design styles, 6 post modern design styles.  
+
 ## Archtypes 1-12
 - [Explorer](explorer.md)
 - [Ruler - Thomas](ruler.md)
