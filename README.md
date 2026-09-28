@@ -16,7 +16,7 @@ Put each group members name, archetype, and a link to their page that explains w
 - [Creator - Matthew Pincay](https://github.com/mpincay619/archetype_design_persusion-copy/blob/main/matthew_pincay.md)
 - [Hero - Jishnu Mukherjee](https://github.com/mpincay619/archetype_design_persusion-copy/blob/main/vishnu_mukherjee.md)
 - [Caregiver - Mayumi Zurita](https://github.com/mpincay619/archetype_design_persusion-copy/blob/main/mayumi_zurita.md)
-- [Rajveer Sharma](https://github.com/mpincay619/archetype_design_persusion-copy/blob/main/rajveer_sharma.md)
+- [Everyman - Rajveer Sharma](https://github.com/mpincay619/archetype_design_persusion-copy/blob/main/rajveer_sharma.md)
 ## Methods of Persusion 1-7 Cialdini
 ## Design Styles within modernism and postmodernism
 ### Modernism - 6 styles
