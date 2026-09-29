@@ -21,9 +21,13 @@ Form a group of **four**. Choose a **project lead** and assign one topic to each
 | [Postmodernist Design](postmodernism/README.md) | 6 styles | TBD |
 
 **The project lead:**
+
 - Creates the shared repository, invites teammates as collaborators, and ensures everyone can clone it.
+
 - Coordinates issue assignments and file ownership.
+
 - Maintains this root README, including member links.
+
 - Ensures pull requests receive review and merges approved work.
 
 The lead coordinates the project; **they do not do everyone's work**. Each topic lead coordinates the research, maintains the topic's `README.md` index, and reviews work in their area.
@@ -37,9 +41,13 @@ Each member creates an issue for their personal page, assigns it to themselves, 
 Ask an AI assistant to help identify your brand archetype. Ask follow-up questions rather than accepting its first answer.
 
 Create `members/first_last.md` containing:
+
 - Your name and chosen archetype.
+
 - Why the AI suggested it and whether you agree.
+
 - Suggested imagery, colors, fonts, and sample phrasing.
+
 - Examples of applying Cialdini’s persuasion principles to your personal brand, with explanations.
 
 The project lead adds each member’s name, archetype, and page link below.
@@ -55,11 +63,17 @@ Each member creates **one complete sample page** for their assigned topic—for 
 Have it ready for the next class. Review the samples together and agree on a reusable format **before producing the remaining pages**.
 
 Every topic page should include:
+
 - **What it is:** A clear definition and essential characteristics.
+
 - **When to use it:** The audience, purpose, and situations it suits.
+
 - **How to apply it:** Practical guidance for imagery, color, typography, layout, or wording, as relevant.
+
 - **Examples:** Relevant images and real-world examples with explanations.
+
 - **Sources:** Links to primary sources and image credits.
+
 - **Navigation:** A link back to the topic index.
 
 Design-style pages should also explain historical context and how the style supports, develops, or challenges modernist ideas.
@@ -67,10 +81,15 @@ Design-style pages should also explain historical context and how the style supp
 ### Collect sources and visual assets
 
 For **each of the six modernist and six postmodernist styles**, collect **2–3 historical examples** from museum collections, archives, or other authoritative institutions. Each example must include:
+
 - An image or a direct link to view the work.
+
 - The work's title, creator, date, and holding institution, when available.
+
 - A direct link to the specific collection record or source page, not just a homepage or search result.
+
 - An image credit and the stated license or reuse conditions. Link to the work if permission to reproduce it is unclear.
+
 - A short explanation of specific features—such as typography, composition, color, or imagery—that you could apply to a hero section.
 
 Distinguish **primary evidence**, such as an original poster or a designer's writing, from an authoritative interpretation, such as a museum essay. Use both to support your understanding. AI output is not a historical source. Keep collected references and your generated designs clearly labeled.
@@ -100,22 +119,30 @@ For each archetype, choose one brand concept, audience, product, and offer. Keep
 | 3 | Same modernist style as Hero 1 | Principle B |
 | 4 | Same postmodernist style as Hero 2 | Principle B |
 
-Name the actual styles and principles; "modern" and "persuasive" are not enough. Across the team's twelve packages, use **all twelve selected design styles and all seven persuasion principles**. The lead maintains a coverage table in the archetype index showing each package's owner, styles, principles, reviewer, and completion status.
+Name the actual styles and principles; "modern" and "persuasive" are not enough. Across the team's twelve packages, use **all twelve selected design styles and all seven persuasion principles**. The archetype topic lead maintains a coverage table in the archetype index showing each package's owner, styles, principles, reviewer, and completion status.
 
 ### What each hero must contain
 
 A hero is the prominent introductory section of a webpage. Submit a **static image mockup**, not a coded webpage, with:
+
 - A purposeful visual or image.
+
 - A readable headline and short supporting copy.
+
 - A visible call-to-action button with specific wording.
+
 - A clear visual hierarchy appropriate to the selected style.
 
 Use a consistent image size within each four-example set so the designs can be compared side by side. Generate and revise the designs with ChatGPT, assembling or correcting text and layout as needed. A background image by itself is not a complete hero.
 
 Under each image, explain briefly:
+
 - What makes the archetype recognizable.
+
 - Where the persuasion principle operates in the offer, imagery, or wording.
+
 - Which features you adapted from the researched style, with links to the relevant source entries.
+
 - Why those choices suit the audience and desired action.
 
 The persuasion mechanism must be visible in the example, not only named in its caption. Do not invent endorsements, statistics, or false urgency to make an example persuasive.
@@ -123,9 +150,13 @@ The persuasion mechanism must be visible in the example, not only named in its c
 ### Show your decisions
 
 For each archetype package, include:
+
 - The key generation prompt or prompts.
+
 - One rejected result, labeled as a draft, and why you rejected it.
+
 - A short account of what you revised.
+
 - A comparison of the four final heroes: what changed with the style, what changed with the persuasion principle, and which combination you would choose for this audience and why.
 
 Each student uses their own ChatGPT account and contributes their own revisions and explanations. Share prompts, exported images, and decisions through the repository. You should be able to explain and defend every example you submit.
@@ -145,9 +176,13 @@ Keep historical reference assets under `assets/references/`, organized by style,
 ### Plan the work
 
 Create an issue **before editing**. Include:
+
 - A specific title, such as `Add Explorer archetype guide`.
+
 - One assigned owner.
+
 - The exact files being created or changed.
+
 - A checklist defining when the task is complete.
 
 The project lead checks for overlapping assignments. Discuss ownership in the issue before starting. Use **one issue and pull request per archetype package**, covering its Markdown page, four final hero images, draft, and source references. If its research page was completed earlier, extend that page in the package pull request. Create separate issues for design-style research and persuasion pages.
@@ -178,10 +213,15 @@ git push -u origin issue-12-explorer
 Open a pull request into `main`. Explain what changed and include `Closes #12` in its description.
 
 Another teammate reviews the content, sources, formatting, and links. For an archetype package, also check:
+
 - All four heroes include readable copy and a CTA.
+
 - The archetype, named styles, and two persuasion principles are visible in the designs.
+
 - Historical references support the design explanations.
+
 - Prompts, a rejected result, revisions, and the comparison are present.
+
 - Images display correctly, credits are included, and filenames match the links.
 
 Give specific feedback that helps improve the work. For example: "You identify social proof, but the hero does not show evidence of other people choosing or endorsing the offer. Revise the example or reconsider the principle."
@@ -191,9 +231,13 @@ Address feedback on the same branch. The project lead merges approved work.
 ## 7. Don’t Step on Each Other’s Toes
 
 - **Never push directly to `main`.** Use your own branch and a pull request.
+
 - **Respect file ownership.** Only the project lead edits the root README. Topic leads maintain their indexes; assigned page and package owners edit the files listed in their issues. Topic reviewers suggest changes through pull requests.
+
 - **Coordinate shared changes in an issue.** Do not edit someone else’s files without agreement.
+
 - **Avoid overlapping work.** Merge an existing task before starting another that changes the same files.
+
 - **Do not force-push or overwrite a teammate’s work to fix a conflict.** Resolve it together.
 
 **Done means:** the page meets its checklist, its sources and links work, another teammate has reviewed it, and the pull request has been merged.
