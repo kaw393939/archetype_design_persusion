@@ -35,7 +35,7 @@ Use the [templates](reference/page-templates.md). Every topic page explains **wh
 - **Design style:** historical context, relationship to modernism, three visual features, and two historical examples from museums, archives, or authoritative sites. A third is optional. Include creator, title, date, institution, source link, image credit/reuse terms, and one feature you could adapt.
 - **Persuasion:** mechanism, one headline/CTA example with an explanation, and a misuse to avoid.
 - **Archetype:** audience motivations, visual/verbal cues, one sourced real brand example with your interpretation, and the four-hero package below.
-- **Personal page:** name, chosen archetype, whether you agree with AI's suggestion, visual cues, and one headline/CTA using a persuasion principle. Finish with links to your three packages and selected authored/reviewed PRs; describe your contribution, learning, and one improvement after feedback. Credit collaborators.
+- **Personal page:** this will become your About page in the project. Put your full name at the top and write a brief introduction to who you are, your interests, and your goals. Then include your chosen archetype, whether you agree with AI's suggestion, visual cues, and one headline/CTA using a persuasion principle. Link each GitHub issue you completed and briefly explain your contribution. Include links to your three packages and selected authored/reviewed PRs. Write a short reflection on what you have learned so far while doing this project, using specific examples from your work, and describe one improvement after feedback. Update the page as you complete work and learn more. Credit collaborators.
 
 ## The four-hero package
 
@@ -63,7 +63,7 @@ Use the [Git workflow and review checklist](reference/git-workflow.md). Each stu
 - [ ] 31 topic pages are linked: 12 archetypes, 12 styles, seven principles.
 - [ ] 24 required historical examples have source records and credits.
 - [ ] 48 finished heroes are present; coverage and process evidence are complete.
-- [ ] Four personal pages document contributions and credit shared work.
+- [ ] Four personal pages include full names, brief self-introductions for the project’s About pages, completed issue links with contribution notes, learning reflections so far, and credit for shared work.
 - [ ] Peer feedback is addressed; all required work is merged into main.
 - [ ] Links and images work in GitHub; headlines and CTAs are readable.
 

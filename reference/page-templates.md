@@ -89,4 +89,39 @@ Replace the example image path and repeat the image/explanation structure for He
 
 ## Personal page
 
-At `members/first_last.md`: name; archetype and response to AI's suggestion; imagery/color/type cues; headline/CTA with persuasion explanation. Finish with your three packages, authored/reviewed PR links, and a short learning reflection. Credit collaborators.
+Create your page at `members/first_last.md`. This personal page will become your About page in the project. Put your full name at the top, write a brief introduction to yourself, link each GitHub issue you completed, and explain what you have learned so far while doing this project. Update your contribution record and reflection as you work. Replace the example links below with links to your actual work.
+
+```markdown
+# First Last
+[Home](../README.md)
+
+## About me
+Write a brief introduction: who you are, your interests, and your goals.
+This introduction will become part of your About page in the project.
+
+## My archetype and design choices
+Chosen archetype:
+AI's suggestion and whether I agree (with a reason):
+Imagery, color, and type cues:
+Headline:
+CTA and destination:
+Persuasion principle and why it fits:
+
+## Issues I completed
+- [#12: Issue title](https://github.com/TEAM/REPOSITORY/issues/12) — What I contributed and the result.
+
+If no issues are complete yet, say so and add links as you finish them.
+
+## My work and reviews
+- My three archetype packages: links to each page.
+- Selected authored pull requests: links and contribution notes.
+- Selected reviewed pull requests: links and what my feedback helped improve.
+
+## What I have learned so far
+Explain what you learned while doing this project. Use specific examples
+from your research, design choices, AI revisions, or Git collaboration.
+Describe one improvement you made after feedback and why it helped.
+
+## Collaborator credits
+Name collaborators and explain the shared work or help they contributed.
+```

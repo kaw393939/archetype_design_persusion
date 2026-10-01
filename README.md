@@ -29,6 +29,8 @@ These lessons support the existing deliverables. Their practice activities go in
 
 The lead replaces placeholders with links to completed student work. Assign each topic once; separate topic indexes are unnecessary.
 
+Each student's [personal page](reference/page-templates.md#personal-page) will become their About page in the project. It must include their full name, a brief introduction to who they are and their interests or goals, links to the GitHub issues they completed with a brief contribution note for each, and a short reflection on what they have learned so far while doing this project. Keep it updated as work progresses.
+
 | Student / personal page | 3 archetypes | 3 design styles | 1–2 persuasion principles |
 |---|---|---|---|
 | Student 1 | | | |
