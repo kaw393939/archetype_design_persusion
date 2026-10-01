@@ -1,5 +1,7 @@
 # 1. Build a hero that has a job
 
+**Optional help.** [Current assignment requirements](../assignment.md) · [Tutorial index](README.md)
+
 [Home](../README.md) · [Assignment](../assignment.md) · [Next: research and style →](02-research-and-style.md)
 
 **You will learn:** how a hero brings this assignment's concepts together.

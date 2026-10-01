@@ -8,7 +8,7 @@ Git records how work changed. A pull request lets a teammate inspect your contri
 
 Create an issue with owner, reviewer, exact files, and completion checklist. One page or archetype package is a useful unit. Keep images with their page. If research was merged earlier, create a new issue/PR for its heroes.
 
-Only the lead edits shared tables in README and assignment.md. Coordinate table updates in issues. Edit others' assigned files only by agreement.
+The lead maintains the section indexes and About-team index. Coordinate index updates in issues. Edit others' assigned files only by agreement.
 
 ## 2. Work on a branch
 
@@ -42,7 +42,7 @@ Target main. Explain the change, link the page, include `Closes #12`, and reques
 
 **Useful:** “You call this social proof, but nothing shows other people choosing the offer. Revise the example or reconsider the principle.”
 
-Each student reviews another student's complete archetype package at least once. The lead merges reviewed, revised work. Resolve conflicts together without overwriting anyone.
+Each contribution needs another teammate's review. The lead merges reviewed, revised work. Resolve conflicts together without overwriting anyone.
 
 ## File organization
 
@@ -52,7 +52,7 @@ archetypes/explorer.md
 persuasion/reciprocity.md
 modernism/style-name.md
 postmodernism/style-name.md
-assets/heroes/explorer/          # final images; drafts/ for rejected work
+assets/heroes/explorer/          # final design images
 assets/references/style-name/    # historical images you may reproduce
 ```
 

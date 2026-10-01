@@ -1,5 +1,7 @@
 # 5. One brief, four visual treatments
 
+**Optional help.** [Current assignment requirements](../assignment.md) · [Tutorial index](README.md)
+
 [← CTAs](04-persuasion-and-cta.md) · [Home](../README.md) · [Next: build your set →](06-build-and-critique.md)
 
 **You will learn:** how layout and image medium change the same message.
@@ -10,7 +12,7 @@
 
 All four images were generated with the built-in image generator. People, photographs, and scenes are synthetic. These are contemporary teaching mockups, not historical artifacts, customer evidence, or tested conversion winners. [Prompts and credits](../reference/sources-and-credits.md).
 
-**This gallery varies style × image medium, holding persuasion constant. Your assignment varies style × persuasion.** Separate generations also differ slightly in crop and type: these are illustrative comparisons, not controlled experiments.
+**This optional gallery shows four treatments to illustrate style and image medium. The assignment requires two designs per archetype, with a third optional.** Separate generations also differ slightly in crop and type: these are illustrative comparisons, not controlled experiments.
 
 ## A. Swiss-inspired layout + photographic imagery
 
@@ -56,10 +58,10 @@ Keep the free map and Explorer brand. A hypothetical **unity** treatment:
 
 This foregrounds shared local identity while keeping the action. Reciprocity remains present; principles can overlap. Explain what you intend to emphasize and what supporting content would make the community claim meaningful.
 
-Use this direction in both styles to plan the second column of your assignment matrix. Create your own brief and imagery rather than submitting these examples.
+You can try this direction in either style. Create your own brief and imagery rather than submitting these tutorial examples.
 
 ## Try it
 
 A/B compares medium most closely; A/C compares style with photographic imagery. Name one useful change and one tradeoff. Choose what to borrow for your brief and what to leave out.
 
-**Carry forward:** use this comparison method in your strongest-hero explanation.
+**Try it:** use this comparison method to help explain your design choices.

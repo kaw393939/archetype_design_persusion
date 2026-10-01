@@ -1,70 +1,60 @@
-# Assignment: build the team's visual guide
+# Assignment
 
-[Home](README.md) · [Templates](reference/page-templates.md) · [Git help](reference/git-workflow.md)
+[Home](README.md) · [Page templates](reference/page-templates.md) · [Git help](reference/git-workflow.md)
 
-**Your goal:** explain a design decision, demonstrate it in a hero, and improve it through peer review. Write short reference pages, not essays.
+## Your team will create
 
-## Who does what
+- **12 archetype pages**, each with two original design examples; a third is optional.
+- **7 persuasion-principle pages**, each with an application example.
+- **6 modernist and 6 postmodernist style pages**, each with two historical examples and authoritative sources.
+- **One About page per student**, including links to their GitHub issues.
 
-Work in a team of four. The lead creates the repository, invites collaborators, maintains the homepage and coverage table, and merges reviewed work. The lead also produces a full share.
+That is **31 topic pages, 24 required original designs, and four About pages** for a team of four. Optional third designs bring the total to at most 36.
 
-| Each student owns | Team total |
-|---|---|
-| 3 archetype pages with 4 heroes each | 12 archetypes; 48 final hero images |
-| 3 design-style pages | 6 modernist + 6 postmodernist styles |
-| 1–2 Cialdini persuasion pages | All 7 principles |
-| 1 personal page; substantive peer reviews | 4 contribution records |
+## Divide the work
 
-Assign each topic once. Share both modernist and postmodernist research across the team. Record owners, reviewers, and exact files in issues before editing. Everyone uses their own ChatGPT account and must explain their own choices.
+Choose a lead to set up the shared repository, invite teammates, keep the section indexes current, and merge reviewed work. The lead also contributes content.
 
-## Checkpoints
+Assign each topic once and share the work fairly. A useful split is three archetypes, three design styles, and one or two persuasion principles per person. Agree on six styles in each design category and enter them in the indexes before writing.
 
-| Checkpoint | Do this | Ready when… |
-|---|---|---|
-| **Next class: research sample** | Each student completes one style page with two historical examples | Sources open; visual features are explained |
-| **Pilot** | Complete one archetype page and four heroes; the other three students review it | The team agrees on the format and merges it |
-| **Complete the guide** | Finish remaining research pages and archetype packages | All assigned topics and image sets are covered |
-| **Submit** | Review, revise, merge, and record individual contributions | The checklist below is complete |
+For every page: create an issue, assign an owner, and list the files and tasks. Work on a branch and request a teammate's review before merging. [Git walkthrough](reference/git-workflow.md).
 
-The pilot counts toward its owner's three archetypes and the team's twelve. Your instructor will provide later deadlines. Research the pilot's styles before designing it.
+## Keep topic pages simple
 
-## What belongs on each page
+Use four sections:
 
-Use the [templates](reference/page-templates.md). Every topic page explains **what it is, when to use it, how to apply it, and its sources**, with a link home.
+1. **What is it?** A short explanation. Include historical context for design styles.
+2. **How do you recognize or use it?** Practical characteristics, audience, and uses.
+3. **Examples.** Images or specific applications, each briefly explained.
+4. **Sources.** Direct links supporting claims and credits for images.
 
-- **Design style:** historical context, relationship to modernism, three visual features, and two historical examples from museums, archives, or authoritative sites. A third is optional. Include creator, title, date, institution, source link, image credit/reuse terms, and one feature you could adapt.
-- **Persuasion:** mechanism, one headline/CTA example with an explanation, and a misuse to avoid.
-- **Archetype:** audience motivations, visual/verbal cues, one sourced real brand example with your interpretation, and the four-hero package below.
-- **Personal page:** this will become your About page in the project. Put your full name at the top and write a brief introduction to who you are, your interests, and your goals. Then include your chosen archetype, whether you agree with AI's suggestion, visual cues, and one headline/CTA using a persuasion principle. Link each GitHub issue you completed and briefly explain your contribution. Include links to your three packages and selected authored/reviewed PRs. Write a short reflection on what you have learned so far while doing this project, using specific examples from your work, and describe one improvement after feedback. Update the page as you complete work and learn more. Credit collaborators.
+For historical examples, record creator, title, date, institution, direct source link, and image credit/reuse information. Use museum collections, archives, and other authoritative sites. Link to the image if reuse permission is unclear. Verify AI-generated claims against sources.
 
-## The four-hero package
+## Design examples for each archetype
 
-Keep the **brand, audience, product, core offer, and image dimensions** consistent. Cross two researched styles with two different principles:
+Create **two static hero-section designs**: one using a researched modernist style and one using a researched postmodernist style. A third design is optional.
 
-| | Principle A | Principle B |
-|---|---|---|
-| Selected modernist style | Hero 1 | Hero 3 |
-| Selected postmodernist style | Hero 2 | Hero 4 |
+Each needs:
 
-Each static hero includes **an image, headline, supporting copy, and visible CTA**. Under each, explain the archetype cue, persuasion mechanism, and a feature adapted from a linked source in two or three sentences.
+- An image, headline, and clear call-to-action button. Add supporting copy if needed.
+- The names of the archetype, design style, and persuasion principle used.
+- Two or three sentences explaining how the choices work together, with a link to the style reference.
 
-Add a brief, key prompt(s), one rejected draft with a revision note, and your choice of strongest hero with a comparison. [Follow the build walkthrough](lessons/06-build-and-critique.md).
+Use ChatGPT to help generate and revise, but check the result and explain your choices. Label generated images. Do not invent testimonials or other evidence. Keep one brand or offer across the two designs so they are easy to compare.
 
-Use all twelve styles and all seven principles across the team. Plan coverage before generating:
+Only the deliverables listed here are required. The [tutorials](lessons/README.md) are optional help.
 
-| Archetype / link | Owner | Modernist style | Postmodernist style | Principles A / B | Reviewer |
-|---|---|---|---|---|---|
-| Fill in all 12 archetypes | | | | | |
+## Your About page
+
+At `members/first_last.md`, include:
+
+- Full name and a short introduction.
+- Links to issues you worked on, with one sentence about your contribution to each. Mark work in progress or completed.
+- A short reflection on what you learned.
+- Credit for shared work where appropriate.
+
+Update it as you work.
 
 ## Submit
 
-Use the [Git workflow and review checklist](reference/git-workflow.md). Each student reviews at least one other student's complete archetype package. The lead submits the repository link through the course's submission channel when:
-
-- [ ] 31 topic pages are linked: 12 archetypes, 12 styles, seven principles.
-- [ ] 24 required historical examples have source records and credits.
-- [ ] 48 finished heroes are present; coverage and process evidence are complete.
-- [ ] Four personal pages include full names, brief self-introductions for the project’s About pages, completed issue links with contribution notes, learning reflections so far, and credit for shared work.
-- [ ] Peer feedback is addressed; all required work is merged into main.
-- [ ] Links and images work in GitHub; headlines and CTAs are readable.
-
-Tutorial examples illustrate methods; create your own work for these deliverables.
+The lead submits the repository link through the course's submission channel. Before submitting, check that all required pages and examples are present, section indexes link to completed pages, sources and images work, About pages link to issues, and the work has been reviewed and merged.

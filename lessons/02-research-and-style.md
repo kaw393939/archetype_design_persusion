@@ -1,5 +1,7 @@
 # 2. Research and apply a visual style
 
+**Optional help.** [Current assignment requirements](../assignment.md) · [Tutorial index](README.md)
+
 [← Hero anatomy](01-hero-anatomy.md) · [Home](../README.md) · [Next: imagery →](03-faces-and-imagery.md)
 
 **You will learn:** how historical evidence becomes a design choice.

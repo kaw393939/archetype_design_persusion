@@ -1,5 +1,7 @@
 # 3. Direct attention with imagery
 
+**Optional help.** [Current assignment requirements](../assignment.md) · [Tutorial index](README.md)
+
 [← Research and style](02-research-and-style.md) · [Home](../README.md) · [Next: CTAs →](04-persuasion-and-cta.md)
 
 **You will learn:** when a face helps, where gaze can lead, and how to choose photography or illustration.
@@ -39,4 +41,4 @@ Reserve space for copy. Choose a purposeful crop; avoid letters across faces or 
 
 Sketch the same copy with direct gaze, inward gaze, and no face. Ask a teammate what they noticed and what they think the offer is. Choose what best explains your brief.
 
-**Carry forward:** explain the image choice in your revision note. Do not claim you measured eye movements.
+**Carry forward:** explain the image choice alongside your design example. Do not claim you measured eye movements.

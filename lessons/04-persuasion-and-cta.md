@@ -1,5 +1,7 @@
 # 4. Make persuasion visible
 
+**Optional help.** [Current assignment requirements](../assignment.md) · [Tutorial index](README.md)
+
 [← Imagery](03-faces-and-imagery.md) · [Home](../README.md) · [Next: examples →](05-example-gallery.md)
 
 **You will learn:** how to connect a reason to act with an honest next step.
@@ -44,7 +46,7 @@ For an Explorer walking brand:
 - **Commitment:** “You chose to explore one new street this week. Plan your first walk.” → **Choose my route**. Requires a real prior choice or a clearly described flow.
 - **Unity:** “For neighbors who take the long way home.” → **Find neighborhood walks**. Needs supporting community context.
 
-The voice stays curious while the reason changes. Your assignment keeps the core offer constant; adjust framing and evidence without quietly switching products.
+The voice stays curious while the reason changes. Keeping the same offer helps you compare designs; adjust framing and evidence deliberately.
 
 ## Make the button readable
 
