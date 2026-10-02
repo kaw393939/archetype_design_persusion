@@ -8,9 +8,9 @@ The lead fills in owners and replaces “Add page link” with a link when each 
 
 | Topic | Owner | Page |
 |---|---|---|
-| Style 1 — choose as a team | Assign owner | Add page link |
-| Style 2 — choose as a team | Assign owner | Add page link |
-| Style 3 — choose as a team | Assign owner | Add page link |
-| Style 4 — choose as a team | Assign owner | Add page link |
-| Style 5 — choose as a team | Assign owner | Add page link |
-| Style 6 — choose as a team | Assign owner | Add page link |
+| Memphis | Jivitesh | Add page link |
+| Push Pin Style | Jivitesh | Add page link |
+| New Wave | Brennan | Add page link |
+| Punk | Minh | Add page link |
+| Grunge | Minh | Add page link |
+| Deconstruction (Cranbrook) | Brennan | Add page link |

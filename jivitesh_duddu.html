@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e84139">
+  <meta name="description" content="Jivitesh Duddu is a creator building playful games, useful interfaces, stories, and ideas into real experiences.">
+  <title>Jivitesh Duddu — Creator / Build 001</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f1f0e9;
+      --ink: #19191b;
+      --muted: #737376;
+      --line: #c9c8c1;
+      --red: #e84139;
+      --red-dark: #bd302b;
+      --panel: #e4e3dc;
+      --green: #b9e571;
+      --display: "Archivo Black", Impact, sans-serif;
+      --body: "Space Grotesk", "Segoe UI", sans-serif;
+      --mono: "SFMono-Regular", Consolas, monospace;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background-color: var(--paper);
+      background-image: radial-gradient(#24242612 .75px, transparent .75px);
+      background-size: 6px 6px;
+      font-family: var(--body);
+    }
+    a { color: inherit; }
+    button { color: inherit; font: inherit; }
+    .shell { width: min(1240px, calc(100% - 48px)); margin: 0 auto; }
+    .eyebrow, .micro, .nav-link, .tag, .section-index, .stat-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .topbar {
+      position: sticky;
+      z-index: 5;
+      top: 0;
+      color: var(--paper);
+      background: var(--ink);
+      border-bottom: 3px solid var(--red);
+    }
+    .topbar-inner { display: flex; align-items: center; min-height: 58px; gap: 28px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; font-weight: 700; }
+    .brand-mark {
+      display: grid;
+      width: 30px;
+      height: 30px;
+      place-items: center;
+      color: var(--ink);
+      background: var(--red);
+      border: 1px solid var(--paper);
+      font-family: var(--display);
+      font-size: 13px;
+      transform: rotate(-4deg);
+    }
+    .brand span:last-child { font-size: 13px; }
+    .top-label { color: #a8a8aa; margin-right: auto; }
+    .nav { display: flex; align-items: center; gap: 24px; }
+    .nav-link { color: #d5d5d3; text-decoration: none; transition: color .18s ease; }
+    .nav-link:hover, .nav-link:focus-visible { color: var(--green); }
+    .top-status { display: flex; align-items: center; gap: 8px; color: #c6c6c3; }
+    .status-dot { width: 7px; height: 7px; background: var(--green); border-radius: 50%; box-shadow: 0 0 10px #b9e57180; }
+
+    .hero { padding: 36px 0 48px; }
+    .editor-bar {
+      display: flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 0 12px;
+      color: #d9d9d7;
+      background: #303033;
+      border: 1px solid #080809;
+      border-bottom: 0;
+      gap: 18px;
+    }
+    .window-dots { display: flex; gap: 5px; }
+    .window-dots i { width: 7px; height: 7px; background: #77777a; border-radius: 50%; }
+    .window-dots i:first-child { background: var(--red); }
+    .editor-tab { align-self: stretch; display: flex; align-items: center; padding: 0 12px; border-bottom: 2px solid var(--red); color: white; }
+    .editor-path { color: #a2a2a3; margin-left: auto; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.04fr .96fr;
+      min-height: 490px;
+      border: 1px solid var(--ink);
+      background: var(--paper);
+      box-shadow: 7px 7px 0 var(--ink);
+    }
+    .hero-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(28px, 5vw, 68px); }
+    .hero-copy .eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 20px; color: var(--red-dark); }
+    .crosshair { width: 12px; height: 12px; border: 1px solid currentColor; position: relative; }
+    .crosshair::before, .crosshair::after { content: ""; position: absolute; background: currentColor; }
+    .crosshair::before { width: 1px; height: 18px; left: 5px; top: -4px; }
+    .crosshair::after { height: 1px; width: 18px; top: 5px; left: -4px; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      max-width: 630px;
+      margin-bottom: 20px;
+      font-family: var(--display);
+      font-size: 84px;
+      font-weight: 400;
+      line-height: .91;
+      text-transform: uppercase;
+    }
+    h1 .red-word { color: var(--red); }
+    .hero-intro { max-width: 440px; margin-bottom: 28px; color: #505054; font-size: 16px; line-height: 1.65; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+    .button {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+      border: 1px solid var(--ink);
+      background: transparent;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+    .button:hover { transform: translate(-2px, -2px); box-shadow: 3px 3px 0 var(--ink); }
+    .button-primary { background: var(--red); color: white; }
+    .button-primary:hover { background: var(--red-dark); }
+    .button-text { border: 0; padding: 0 6px; }
+    .arrow { margin-left: 10px; font-size: 18px; }
+
+    .hero-art {
+      position: relative;
+      display: grid;
+      min-height: 390px;
+      overflow: hidden;
+      place-items: center;
+      background-color: #d9d8d1;
+      background-image: linear-gradient(#19191b10 1px, transparent 1px), linear-gradient(90deg, #19191b10 1px, transparent 1px), radial-gradient(#19191b1d .8px, transparent .8px);
+      background-size: 32px 32px, 32px 32px, 5px 5px;
+      border-left: 1px solid var(--ink);
+    }
+    .art-note { position: absolute; z-index: 2; padding: 6px 8px; color: var(--paper); background: var(--ink); transform: rotate(-3deg); }
+    .art-note.top { top: 24px; left: 24px; }
+    .art-note.bottom { right: 22px; bottom: 22px; color: var(--ink); background: var(--green); transform: rotate(2deg); }
+    .orbit { position: absolute; width: min(74%, 385px); aspect-ratio: 1; border: 1px solid #19191b50; border-radius: 50%; transform: rotate(-24deg) scaleY(.64); }
+    .orbit::before, .orbit::after { content: ""; position: absolute; inset: 18%; border: 1px dashed #19191b72; border-radius: 50%; }
+    .orbit::after { inset: 35%; border-style: solid; }
+    .spark { position: absolute; z-index: 1; width: 50px; height: 50px; background: var(--red); clip-path: polygon(50% 0, 61% 37%, 100% 50%, 62% 61%, 50% 100%, 39% 62%, 0 50%, 38% 39%); }
+    .spark.one { top: 21%; right: 21%; transform: rotate(12deg); }
+    .spark.two { bottom: 18%; left: 17%; width: 25px; height: 25px; background: var(--ink); }
+    .artifact {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      width: min(62%, 285px);
+      aspect-ratio: .78;
+      place-items: center;
+      border: 2px solid var(--ink);
+      background: var(--red);
+      box-shadow: 12px 14px 0 var(--ink);
+      transform: rotate(5deg);
+      animation: settle-in .75s cubic-bezier(.2,.8,.2,1) both;
+    }
+    .artifact::before { content: ""; position: absolute; inset: 9px; border: 1px solid #19191b9c; }
+    .artifact-label { position: absolute; z-index: 2; top: 17px; left: 18px; font: 10px var(--mono); }
+    .artifact-type { position: absolute; z-index: 2; right: 18px; bottom: 17px; font: 10px var(--mono); }
+    .artifact-symbol { width: 68%; aspect-ratio: 1; display: grid; place-items: center; border: 2px solid var(--ink); border-radius: 50%; background: var(--green); transform: rotate(-12deg); }
+    .artifact-symbol span { font: 94px/.8 var(--display); transform: translateY(-5px); }
+    .art-caption { position: absolute; left: 24px; bottom: 24px; z-index: 2; font: 10px var(--mono); }
+    @keyframes settle-in { from { opacity: 0; transform: translateY(15px) rotate(-2deg); } to { opacity: 1; transform: translateY(0) rotate(5deg); } }
+
+    .section { padding: 68px 0; border-top: 1px solid var(--line); }
+    .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 28px; }
+    .section-index { color: var(--red-dark); }
+    h2 { margin: 8px 0 0; font: 400 48px/.98 var(--display); text-transform: uppercase; }
+    .section-aside { max-width: 320px; margin: 0 0 3px; color: var(--muted); font-size: 14px; line-height: 1.55; }
+    .project-tools { display: flex; align-items: center; gap: 7px; margin: 0 0 18px; }
+    .filter {
+      min-height: 34px;
+      padding: 0 12px;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: #55555a;
+      font: 10px var(--mono);
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .filter[aria-pressed="true"] { border-color: var(--ink); color: var(--paper); background: var(--ink); }
+    .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .project { min-width: 0; border: 1px solid var(--ink); background: var(--paper); transition: transform .2s ease, box-shadow .2s ease; }
+    .project:hover { transform: translateY(-4px); box-shadow: 5px 5px 0 var(--ink); }
+    .project[hidden] { display: none; }
+    .project-art { position: relative; height: 205px; overflow: hidden; background: #3b3834; border-bottom: 1px solid var(--ink); }
+    .project-art img { display: block; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.12); transition: transform .45s ease, filter .3s ease; }
+    .project:hover .project-art img { transform: scale(1.04); filter: grayscale(.45) contrast(1.08); }
+    .project-art::after { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, #e841394a, transparent 58%); mix-blend-mode: multiply; pointer-events: none; }
+    .project-code { position: absolute; z-index: 1; top: 12px; left: 12px; padding: 6px 8px; color: white; background: var(--ink); }
+    .project-kind { position: absolute; z-index: 1; right: 12px; bottom: 12px; padding: 6px 8px; background: var(--green); }
+    .project-body { padding: 17px 17px 16px; }
+    .project-title-row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+    h3 { margin: 0; font: 400 23px/1 var(--display); text-transform: uppercase; }
+    .project-meta { color: var(--muted); font: 10px var(--mono); white-space: nowrap; }
+    .project-body p { min-height: 44px; margin: 12px 0 16px; color: #5a5a5e; font-size: 13px; line-height: 1.55; }
+    .project-foot { display: flex; justify-content: space-between; align-items: center; padding-top: 11px; border-top: 1px solid var(--line); }
+    .tag { color: #626267; font-size: 10px; }
+    .concept-stamp { color: var(--red-dark); font: 10px var(--mono); text-transform: uppercase; }
+
+    .process { display: grid; grid-template-columns: .72fr 1.28fr; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); }
+    .process-lead { padding: 30px; border-right: 1px solid #ffffff38; }
+    .process-lead .section-index { color: var(--green); }
+    .process-lead h2 { max-width: 340px; margin: 16px 0; }
+    .process-lead p { max-width: 300px; margin-bottom: 0; color: #b7b7b8; font-size: 14px; line-height: 1.6; }
+    .process-steps { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .step { display: flex; flex-direction: column; padding: 25px 21px; border-right: 1px solid #ffffff38; }
+    .step:last-child { border-right: 0; }
+    .step-num { color: var(--red); font: 12px var(--mono); }
+    .step h3 { margin: 34px 0 12px; color: white; font: 700 17px var(--body); text-transform: uppercase; }
+    .step p { margin: 0; color: #b7b7b8; font-size: 13px; line-height: 1.6; }
+
+    .exchange-grid { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--ink); }
+    .idea-machine { min-height: 230px; padding: 27px; color: var(--ink); background: var(--green); border-right: 1px solid var(--ink); }
+    .idea-machine .eyebrow { color: #3b5120; }
+    .idea-machine blockquote { min-height: 66px; margin: 24px 0; font: 400 23px/1.25 var(--display); text-transform: uppercase; }
+    .idea-machine .button { min-height: 38px; padding: 0 12px; font-size: 12px; }
+    .proof { padding: 27px; background: #d9d8d1; }
+    .proof-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 22px; }
+    .proof-heading h3 { font-size: 20px; }
+    .proof-heading span { color: var(--muted); }
+    .proof-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .proof-stat { padding-top: 12px; border-top: 1px solid #98989a; }
+    .proof-stat strong { display: block; margin-bottom: 7px; font: 400 23px var(--display); }
+    .proof-stat span { color: #65656a; font: 10px/1.5 var(--mono); text-transform: uppercase; }
+    .proof-note { margin: 22px 0 0; color: #646469; font-size: 12px; line-height: 1.5; }
+
+    .content-copy { max-width: 760px; color: #55555a; font-size: 16px; line-height: 1.7; }
+    .what-grid { display: grid; grid-template-columns: 1.05fr .95fr; border: 1px solid var(--ink); }
+    .what-lead { padding: 30px; color: var(--paper); background: var(--ink); }
+    .what-lead .micro { color: var(--green); }
+    .what-lead p { margin: 18px 0 0; color: #d2d2d0; font-size: 16px; line-height: 1.7; }
+    .trait-grid { display: grid; grid-template-columns: 1fr 1fr; }
+    .trait { min-height: 125px; padding: 20px; border-bottom: 1px solid var(--line); }
+    .trait:nth-child(odd) { border-right: 1px solid var(--line); }
+    .trait:nth-last-child(-n + 2) { border-bottom: 0; }
+    .trait strong { display: block; margin-bottom: 9px; font: 400 17px var(--display); text-transform: uppercase; }
+    .trait p { margin: 0; color: #66666a; font-size: 13px; line-height: 1.55; }
+    .when-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--ink); }
+    .when-card { min-height: 200px; padding: 24px; border-right: 1px solid var(--ink); }
+    .when-card:last-child { border-right: 0; }
+    .when-card .micro { color: var(--red-dark); }
+    .when-card h3 { margin: 25px 0 12px; font: 400 20px var(--display); text-transform: uppercase; }
+    .when-card p { margin: 0; color: #5e5e62; font-size: 14px; line-height: 1.65; }
+    .caution { margin: 14px 0 0; padding: 14px 17px; color: #454549; background: var(--green); font-size: 13px; line-height: 1.55; }
+    .apply-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--ink); border-left: 1px solid var(--ink); }
+    .apply-item { min-height: 175px; padding: 23px; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+    .apply-item .micro { color: var(--red-dark); }
+    .apply-item h3 { margin: 20px 0 9px; font: 400 19px var(--display); text-transform: uppercase; }
+    .apply-item p { margin: 0; color: #5e5e62; font-size: 14px; line-height: 1.6; }
+    .example-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .example-card { min-width: 0; border: 1px solid var(--ink); background: var(--paper); }
+    .example-art { position: relative; height: 190px; overflow: hidden; background: #3b3834; border-bottom: 1px solid var(--ink); }
+    .example-art img { display: block; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.12); }
+    .example-code { position: absolute; top: 12px; left: 12px; padding: 6px 8px; color: white; background: var(--ink); }
+    .image-credit { display: flex; min-height: 29px; align-items: center; justify-content: space-between; gap: 8px; padding: 5px 9px; color: #55555a; background: #e4e3dc; font: 9px var(--mono); }
+    .image-credit a, .source-list a, .case-source { color: var(--red-dark); text-underline-offset: 3px; }
+    .example-body { padding: 16px; }
+    .example-body h3 { margin-bottom: 10px; }
+    .example-body p { min-height: 88px; margin: 0 0 14px; color: #5a5a5e; font-size: 13px; line-height: 1.6; }
+    .case-source { font: 11px var(--mono); text-transform: uppercase; }
+    .interpretation-note { margin: 16px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+    .source-list { display: grid; gap: 0; padding: 0; margin: 0; list-style: none; border-top: 1px solid var(--line); }
+    .source-list li { display: grid; grid-template-columns: 36px 1fr; gap: 12px; padding: 17px 0; border-bottom: 1px solid var(--line); color: #55555a; font-size: 13px; line-height: 1.6; }
+    .source-number { color: var(--red-dark); font: 11px var(--mono); }
+    .index-link { display: inline-flex; align-items: center; min-height: 43px; margin-top: 25px; padding: 0 15px; color: var(--paper); background: var(--ink); font: 11px var(--mono); text-decoration: none; text-transform: uppercase; }
+    .index-link:hover { background: var(--red-dark); }
+
+    .footer { padding: 25px 0 35px; color: #d5d5d3; background: var(--ink); border-top: 4px solid var(--red); }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .footer-name { font: 18px var(--display); text-transform: uppercase; }
+    .footer-meta { color: #9a9a9c; font: 10px var(--mono); }
+    .back-top { color: var(--green); font: 11px var(--mono); text-decoration: none; text-transform: uppercase; }
+    .reveal { animation: reveal-in .65s both; }
+    @keyframes reveal-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (max-width: 820px) {
+      .shell { width: min(100% - 32px, 680px); }
+      .top-label, .top-status { display: none; }
+      .topbar-inner { min-height: 54px; justify-content: space-between; }
+      .nav { gap: 14px; }
+      .nav-link { font-size: 9px; }
+      .hero { padding-top: 22px; }
+      h1 { font-size: 64px; }
+      h2 { font-size: 40px; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-copy { padding: 38px 30px 30px; }
+      .hero-art { min-height: 350px; border-top: 1px solid var(--ink); border-left: 0; }
+      .project-grid { grid-template-columns: repeat(2, 1fr); }
+      .project:last-child { grid-column: 1 / -1; }
+      .project:last-child .project-art { height: 240px; }
+      .process { grid-template-columns: 1fr; }
+      .process-lead { border-right: 0; border-bottom: 1px solid #ffffff38; }
+      .example-grid { grid-template-columns: repeat(2, 1fr); }
+      .example-card:last-child { grid-column: 1 / -1; }
+      .example-card:last-child .example-art { height: 220px; }
+    }
+    @media (max-width: 560px) {
+      .shell { width: calc(100% - 24px); }
+      .brand span:last-child { font-size: 11px; }
+      .brand { gap: 8px; }
+      .nav { gap: 10px; }
+      .nav-link { font-size: 8px; }
+      .editor-path { display: none; }
+      .hero { padding: 14px 0 35px; }
+      .editor-bar { gap: 8px; }
+      .hero-grid { min-height: initial; box-shadow: 4px 4px 0 var(--ink); }
+      .hero-copy { padding: 31px 22px 27px; }
+      h1 { font-size: 48px; }
+      h2 { font-size: 34px; }
+      .hero-intro { font-size: 14px; }
+      .hero-art { min-height: 300px; }
+      .artifact { width: min(58%, 225px); }
+      .artifact-symbol span { font-size: 76px; }
+      .section { padding: 48px 0; }
+      .section-heading { align-items: flex-start; flex-direction: column; gap: 13px; }
+      .section-aside { max-width: 100%; }
+      .project-tools { overflow-x: auto; padding-bottom: 4px; }
+      .filter { flex: 0 0 auto; }
+      .project-grid { grid-template-columns: 1fr; gap: 13px; }
+      .project:last-child { grid-column: auto; }
+      .project-art, .project:last-child .project-art { height: 215px; }
+      .project-body p { min-height: 0; }
+      .process-steps { grid-template-columns: 1fr; }
+      .step { min-height: 135px; border-right: 0; border-bottom: 1px solid #ffffff38; }
+      .step:last-child { border-bottom: 0; }
+      .step h3 { margin: 16px 0 8px; }
+      .exchange-grid { grid-template-columns: 1fr; }
+      .idea-machine { border-right: 0; border-bottom: 1px solid var(--ink); }
+      .proof-stats { gap: 8px; }
+      .proof-stat strong { font-size: 18px; }
+      .proof-stat span { font-size: 9px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+      .topbar-inner { flex-wrap: wrap; padding: 10px 0; }
+      .nav { order: 3; width: 100%; justify-content: space-between; }
+      .nav-link { font-size: 9px; }
+      .what-grid { grid-template-columns: 1fr; }
+      .trait { min-height: 115px; }
+      .when-grid { grid-template-columns: 1fr; }
+      .when-card { min-height: auto; border-right: 0; border-bottom: 1px solid var(--ink); }
+      .when-card:last-child { border-bottom: 0; }
+      .when-card h3 { margin: 15px 0 8px; }
+      .apply-grid { grid-template-columns: 1fr; }
+      .apply-item { min-height: initial; }
+      .example-grid { grid-template-columns: 1fr; gap: 13px; }
+      .example-card:last-child { grid-column: auto; }
+      .example-art, .example-card:last-child .example-art { height: 215px; }
+      .example-body p { min-height: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar" id="top">
+    <div class="shell topbar-inner">
+      <a class="brand" href="#top" aria-label="Jivitesh Duddu home">
+        <span class="brand-mark">JD</span>
+        <span>JIVITESH DUDDU</span>
+      </a>
+      <span class="top-label micro">Brand archetypes / sample page</span>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-link" href="#what">What</a>
+        <a class="nav-link" href="#when">When</a>
+        <a class="nav-link" href="#apply">Apply</a>
+        <a class="nav-link" href="#examples">Examples</a>
+        <a class="nav-link" href="#sources">Sources</a>
+      </nav>
+      <span class="top-status micro"><i class="status-dot"></i> Creator / 01</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="editor-bar micro" aria-hidden="true">
+        <span class="window-dots"><i></i><i></i><i></i></span>
+        <span class="editor-tab">CREATOR.TSCN</span>
+        <span>2D</span><span>GAME</span>
+        <span class="editor-path">res://archetypes/creator</span>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="crosshair" aria-hidden="true"></span> Jivitesh Duddu / assigned topic</p>
+          <h1 id="hero-title">The<br><span class="red-word">Creator.</span></h1>
+          <p class="hero-intro">An archetype for people who imagine something new, then shape it into an experience others can see, use, or feel.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#what">Read the guide <span class="arrow" aria-hidden="true">↘</span></a>
+            <a class="button button-text" href="#examples">See examples <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Abstract red and green Creator emblem on a sketch grid">
+          <span class="art-note top micro">IDEA → EXPERIENCE</span>
+          <span class="art-note bottom micro">IMAGINE / MAKE / SHARE</span>
+          <span class="orbit" aria-hidden="true"></span>
+          <span class="spark one" aria-hidden="true"></span>
+          <span class="spark two" aria-hidden="true"></span>
+          <div class="artifact" aria-hidden="true">
+            <span class="artifact-label">BRAND ARCHETYPE / 01</span>
+            <span class="artifact-symbol"><span>C</span></span>
+            <span class="artifact-type">THE CREATOR</span>
+          </div>
+          <span class="art-caption">FIG. 01 — FROM VISION TO FORM</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="what" aria-labelledby="what-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div><span class="section-index">01 / The archetype</span><h2 id="what-title">What it is</h2></div>
+          <p class="section-aside">The Creator is driven to turn a vision into something original, useful, expressive, or lasting.</p>
+        </div>
+        <div class="what-grid">
+          <div class="what-lead">
+            <span class="micro">Core idea / make a vision real</span>
+            <p>The Creator archetype expresses identity through making. Its promise is not simply novelty: it is the satisfaction of bringing an imagined possibility into the world with care and skill.</p>
+          </div>
+          <div class="trait-grid">
+            <div class="trait"><strong>Desire</strong><p>Create something of enduring value and express a distinct vision.</p></div>
+            <div class="trait"><strong>Goal</strong><p>Give ideas a form other people can experience and make their own.</p></div>
+            <div class="trait"><strong>Fear</strong><p>Ordinariness, a blank page, or a vision left unrealized.</p></div>
+            <div class="trait"><strong>Gift</strong><p>Imagination, craft, and the freedom to see another way forward.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="when" aria-labelledby="when-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div><span class="section-index">02 / Fit and purpose</span><h2 id="when-title">When to use it</h2></div>
+          <p class="section-aside">Use Creator when making and self-expression are central to the value, not just decoration around it.</p>
+        </div>
+        <div class="when-grid">
+          <article class="when-card"><span class="micro">Audience</span><h3>People who make</h3><p>Artists, builders, players, entrepreneurs, and curious beginners who want tools or permission to bring their own ideas to life.</p></article>
+          <article class="when-card"><span class="micro">Purpose</span><h3>Enable expression</h3><p>For products and brands that help people design, customize, build, publish, invent, or experience something in a personal way.</p></article>
+          <article class="when-card"><span class="micro">Situation</span><h3>Invite exploration</h3><p>When the audience values originality, craft, experimentation, and the feeling of making progress from a first attempt.</p></article>
+        </div>
+        <p class="caution"><strong>Watch the shadow:</strong> Creator branding can overvalue perfection or novelty. Keep the promise achievable, make room for iteration, and show how the product helps people finish what they start.</p>
+      </div>
+    </section>
+
+    <section class="section" id="apply" aria-labelledby="apply-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div><span class="section-index">03 / Put it to work</span><h2 id="apply-title">How to apply it</h2></div>
+          <p class="section-aside">Make the creative act visible. Show the idea becoming an artifact, and let the audience imagine their own version.</p>
+        </div>
+        <div class="apply-grid">
+          <article class="apply-item"><span class="micro">01 / Imagery</span><h3>Show the making</h3><p>Pair finished work with sketches, tools, prototypes, material textures, and behind-the-scenes decisions. Favor real process over polished stock scenes.</p></article>
+          <article class="apply-item"><span class="micro">02 / Color</span><h3>Make contrast do work</h3><p>Use a restrained base of ink black and paper gray, then a confident red accent. Add a secondary color only when it helps organize or energize the work.</p></article>
+          <article class="apply-item"><span class="micro">03 / Type and layout</span><h3>Mix impact with clarity</h3><p>Use expressive display type such as Archivo Black or Zico Display for short headlines; pair it with a clean sans-serif for readable body text. Let grids bend, but keep navigation clear.</p></article>
+          <article class="apply-item"><span class="micro">04 / Voice</span><h3>Invite, do not posture</h3><p>Use active language about making and possibility: “Build it your way” or “Make the thing you wish existed.” Back big ideas with a useful next step.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="examples" aria-labelledby="examples-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div><span class="section-index">04 / Creator signals in the world</span><h2 id="examples-title">Examples</h2></div>
+          <p class="section-aside">These are examples of Creator-like qualities in the work, not claims that the brands officially use this archetype.</p>
+        </div>
+        <div class="example-grid">
+          <article class="example-card">
+            <div class="example-art">
+              <img src="https://www.lego.com/cdn/cs/aboutus/assets/bltf937b03e3ee30ee8/home--history.jpg?width=1200&amp;quality=85&amp;crop=16:9" alt="Historic wooden toy cars from the LEGO Group history page" loading="lazy">
+              <span class="example-code micro">01 / OPEN-ENDED PLAY</span>
+            </div>
+            <div class="image-credit">Image: LEGO Group <a href="https://www.lego.com/en-us/aboutus" target="_blank" rel="noreferrer">Image source ↗</a></div>
+            <div class="example-body">
+              <h3>LEGO</h3>
+              <p>LEGO describes its purpose as inspiring and developing builders. The brick system turns play into making: one set of parts can become many personal creations.</p>
+              <a class="case-source" href="https://www.lego.com/en-us/aboutus" target="_blank" rel="noreferrer">LEGO Group / About us ↗</a>
+            </div>
+          </article>
+          <article class="example-card">
+            <div class="example-art">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Laptop on a creative workspace, illustrative image" loading="lazy">
+              <span class="example-code micro">02 / CREATIVE TOOLS</span>
+            </div>
+            <div class="image-credit">Illustrative photo: Unsplash <a href="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" target="_blank" rel="noreferrer">Image source ↗</a></div>
+            <div class="example-body">
+              <h3>Adobe</h3>
+              <p>Creative Cloud brings tools for design, photography, video, and illustration together. Its Creator signal is enabling people to produce and refine their own work.</p>
+              <a class="case-source" href="https://www.adobe.com/creativecloud.html" target="_blank" rel="noreferrer">Adobe Creative Cloud ↗</a>
+            </div>
+          </article>
+          <article class="example-card">
+            <div class="example-art">
+              <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Arcade machines, illustrative image for interactive entertainment" loading="lazy">
+              <span class="example-code micro">03 / PLAYFUL WORLDS</span>
+            </div>
+            <div class="image-credit">Illustrative photo: Unsplash <a href="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" target="_blank" rel="noreferrer">Image source ↗</a></div>
+            <div class="example-body">
+              <h3>Nintendo</h3>
+              <p>Nintendo makes interactive entertainment. Its games show how imaginative characters, worlds, and mechanics can become experiences people actively play and share.</p>
+              <a class="case-source" href="https://www.nintendo.co.jp/corporate/en/outline/index.html" target="_blank" rel="noreferrer">Nintendo / Company profile ↗</a>
+            </div>
+          </article>
+        </div>
+        <p class="interpretation-note">The Adobe and Nintendo photos are illustrative stock images, not product screenshots or official brand artwork.</p>
+      </div>
+    </section>
+
+    <section class="section" id="sources" aria-labelledby="sources-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div><span class="section-index">05 / Further reading and credits</span><h2 id="sources-title">Sources</h2></div>
+          <p class="section-aside">Archetype definitions are a framework for interpretation; the examples below are grounded in each organization's own descriptions.</p>
+        </div>
+        <ol class="source-list">
+          <li><span class="source-number">01</span><span>Mark, Margaret, and Carol S. Pearson. <em>The Hero and the Outlaw: Building Extraordinary Brands Through the Power of Archetypes.</em> McGraw-Hill, 2001. <a href="https://search.worldcat.org/search?q=The%20Hero%20and%20the%20Outlaw%20Mark%20Pearson" target="_blank" rel="noreferrer">WorldCat catalog search ↗</a></span></li>
+          <li><span class="source-number">02</span><span>LEGO Group, <a href="https://www.lego.com/en-us/aboutus" target="_blank" rel="noreferrer">About Us ↗</a>. Used for its stated purpose and history.</span></li>
+          <li><span class="source-number">03</span><span>Adobe, <a href="https://www.adobe.com/creativecloud.html" target="_blank" rel="noreferrer">Creative Cloud ↗</a>. Used for the product-category example.</span></li>
+          <li><span class="source-number">04</span><span>Nintendo, <a href="https://www.nintendo.co.jp/corporate/en/outline/index.html" target="_blank" rel="noreferrer">Company Profile ↗</a>. Used for its stated entertainment business.</span></li>
+          <li><span class="source-number">05</span><span>Image credits: LEGO Group image linked on the LEGO example; Adobe and Nintendo illustrative photos from Unsplash, linked beneath each image. Font families: Archivo Black and Space Grotesk via Google Fonts.</span></li>
+        </ol>
+        <a class="index-link" href="README.md#team-members">← Back to project index</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <span class="footer-name">Jivitesh Duddu / Creator</span>
+      <span class="footer-meta">INDEPENDENT IDEAS, BUILT ONE EXPERIMENT AT A TIME</span>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>

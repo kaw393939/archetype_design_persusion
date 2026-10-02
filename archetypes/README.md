@@ -8,15 +8,15 @@ The lead fills in owners and replaces “Add page link” with a link when each 
 
 | Topic | Owner | Page |
 |---|---|---|
-| Innocent | Assign owner | Add page link |
-| Everyperson / Everyman | Assign owner | Add page link |
-| Hero | Assign owner | Add page link |
-| Caregiver | Assign owner | Add page link |
-| Explorer | Assign owner | Add page link |
-| Rebel / Outlaw | Assign owner | Add page link |
-| Lover | Assign owner | Add page link |
-| Creator | Assign owner | Add page link |
-| Jester | Assign owner | Add page link |
-| Sage | Assign owner | Add page link |
-| Magician | Assign owner | Add page link |
-| Ruler | Assign owner | Add page link |
+| Innocent | Omari | Add page link |
+| Everyperson / Everyman | Brennan | Add page link |
+| Hero | Minh | Add page link |
+| Caregiver | Jivitesh | Add page link |
+| Explorer | Omari | Add page link |
+| Rebel / Outlaw | Minh | Add page link |
+| Lover | Brennan | Add page link |
+| Creator | Jivitesh | Add page link |
+| Jester | Brennan | Add page link |
+| Sage | Omari | Add page link |
+| Magician | Minh | Add page link |
+| Ruler | Jivitesh | Add page link |
